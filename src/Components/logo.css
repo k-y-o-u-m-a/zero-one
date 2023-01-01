@@ -1,0 +1,60 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-text {
+    font-size: 10rem;
+    padding: .5rem;
+}
+
+.specs-svg {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.specs-svg svg {
+    position: absolute;
+    margin-top: 1.2rem;
+}
+
+.chasma {
+    opacity: 0;
+}
+
+#chasma1 {
+    opacity: 1;
+    animation: hideshow 6s ease infinite;
+    animation-delay: 0s;
+}
+
+#chasma2 {
+    opacity: 1;
+    animation: hideshow 6s ease infinite;
+    animation-delay: 2s;
+}
+
+#chasma3 {
+    opacity: 1;
+    animation: hideshow 6s ease infinite;
+    animation-delay: 4s;
+}
+
+
+@keyframes hideshow {
+
+    0%,
+    100% {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+}

@@ -1,0 +1,32 @@
+.homepage-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .specs-svg {
+    width: 242px;
+}
+
+.main-content .specs-svg svg {
+    margin-top: 1.2rem;
+}
+
+.sub-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2rem;
+}
+
+.sub-content .club {
+    font-size: 3rem;
+    opacity: .85;
+    padding: .5rem;
+}
+
+.sub-content .college-name {
+    font-size: 1.8rem;
+    opacity: .6;
+    padding: .5rem;
+}
