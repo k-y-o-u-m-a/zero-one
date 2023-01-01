@@ -1,0 +1,27 @@
+.nav-tab a {
+    padding: .5rem 1rem;
+    background: var(--white);
+    border-radius: .55rem;
+    position: relative;
+    z-index: 10;
+    font-size: 1rem;
+}
+
+.nav-tab a::before {
+    content: '';
+    background: linear-gradient(to right, var(--c1), var(--c2));
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: .6rem;
+    z-index: -10;
+    transform: scaleX(1.03) scaleY(1.06);
+    visibility: hidden;
+}
+
+
+.nav-tab a:hover::before {
+    visibility: visible;
+}

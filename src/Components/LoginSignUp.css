@@ -1,0 +1,9 @@
+.login-signup {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 8rem);
+    background: rgba(255, 25, 25, 0.919);
+    z-index: 200;
+}
