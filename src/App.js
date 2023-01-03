@@ -10,6 +10,9 @@ function App() {
       <Header />
       <Routes>
         <Route exact path='/' element={<Home />} />
+        <Route exact path='/about' element={<Home />} />
+        <Route exact path='/' element={<Home />} />
+        <Route exact path='/' element={<Home />} />
         <Route path='*' element={<Error />} />
       </Routes>
     </div>

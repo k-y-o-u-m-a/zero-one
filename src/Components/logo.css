@@ -5,7 +5,6 @@
 }
 
 .title-text {
-    font-size: 10rem;
     padding: .5rem;
 }
 
@@ -19,7 +18,6 @@
 
 .specs-svg svg {
     position: absolute;
-    margin-top: 1.2rem;
 }
 
 .chasma {

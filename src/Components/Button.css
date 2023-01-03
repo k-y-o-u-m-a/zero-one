@@ -1,27 +1,27 @@
 .button a {
     padding: .5rem 2rem;
-    background: var(--white);
-    border-radius: 1.3rem;
+    border-radius: 5rem;
     position: relative;
-    z-index: 10;
-    font-size: 1rem;
+    font-size: 1.8rem;
     transition: cubic-bezier(0.45, -0.31, 0.89, 1.36);
-}
-
-.button a::before {
-    content: '';
     background: linear-gradient(to left, #00dfd8, #007cf0);
-    position: absolute;
-    top: 0;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    z-index: -10;
-    transform: scaleX(1.05) scaleY(1.1);
-    transition: inherit;
 }
 
-.button a:hover {
+.button a::after {
+    content: attr(data-text);
+    display: grid;
+    place-items: center;
+    position: absolute;
+    width: calc(100% - .4rem);
+    height: calc(100% - .4rem);
+    top: .2rem;
+    left: .2rem;
+    font-weight: bold;
+    background: var(--white);
+    box-sizing: border-box;
+    border-radius: 5rem;
+}
+
+.button a:hover::after {
     background: linear-gradient(to left, #00dfd8, #007cf0);
 }
