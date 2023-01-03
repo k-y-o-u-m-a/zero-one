@@ -11,6 +11,20 @@
     --red2: #fc1235;
 }
 
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    width: 1rem;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--c1), var(--c2));
+    border-radius: 1rem;
+}
+
 * {
     margin: 0;
     padding: 0;
