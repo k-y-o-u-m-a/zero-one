@@ -12,11 +12,11 @@
 }
 
 ::-webkit-scrollbar {
-  width: 1rem;
+  width: 0.6rem;
 }
 
 ::-webkit-scrollbar-track {
-  width: 1rem;
+  width: 0.6rem;
   border-radius: 1rem;
 }
 
