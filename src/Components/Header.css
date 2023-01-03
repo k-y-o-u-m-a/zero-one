@@ -9,6 +9,7 @@ header {
     top: 0;
     left: 0;
     z-index: 2;
+    background: var(--bg);
 }
 
 header .title {
@@ -51,11 +52,13 @@ header nav {
     flex: 1;
     align-items: center;
     justify-content: center;
+    padding: 0 3rem;
 }
 
 nav .nav-list {
     display: flex;
-    flex: .8;
+    flex: 1;
+    max-width: 80%;
     align-items: center;
     padding: 0 .5rem;
     justify-content: space-between;
@@ -68,25 +71,25 @@ header .user-info {
 }
 
 .user-info .nav-notification {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .divider {
-    width: 2.5px;
-    height: 2rem;
-    background: var(--black);
-    margin: 0 1rem;
+    width: .25rem;
+    height: 3rem;
+    background: var(--text);
+    margin: 0 2rem;
     border-radius: 1rem;
 }
 
 .user-info .nav-profile-pic {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     position: relative;
-    background: var(--white);
+    background: var(--bg);
     align-items: center;
     justify-content: center;
     position: relative;
@@ -95,42 +98,49 @@ header .user-info {
 
 .nav-profile-pic::before {
     content: '';
-    background: linear-gradient(to left, #00dfd8, #007cf0);
+    background: linear-gradient(to left, var(--c1), var(--c2));
     position: absolute;
-    top: 0;
-    left: 0%;
-    width: 100%;
-    height: 100%;
+    top: -0.2rem;
+    left: -0.2rem;
+    right: -0.2rem;
+    bottom: -0.2rem;
     border-radius: inherit;
     z-index: -1;
-    transform: scale(1.1);
     transition: inherit;
 }
 
+.nav-profile-pic .nav-username {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .user-info .nav-profile-dropdown {
-    font-size: .9rem;
+    font-size: 1.5rem;
     position: absolute;
     top: 100%;
     cursor: pointer;
 }
 
 .nav-profile-dropdown .nav-profile-dropdown-list {
+    width: 15rem;
     position: absolute;
-    right: -160%;
+    right: -100%;
     top: 100%;
-    padding: .5rem .8rem;
+    padding: .5rem .5rem;
     border-radius: .5rem;
-    background: var(--white);
+    background: var(--bg);
+    text-align: center;
 }
 
 .nav-profile-dropdown .nav-profile-dropdown-list ::before {
     content: '';
-    background: linear-gradient(to left, #ff0080, #7928ca);
+    background: linear-gradient(to left, var(--c1), var(--c2));
     position: absolute;
     top: -.5rem;
-    left: -.8rem;
-    width: 100%;
-    padding: .5rem .8rem;
+    left: -.5rem;
+    bottom: -.5rem;
+    right: -.5rem;
+    padding: .5rem .5rem;
     height: 100%;
     border-radius: .6rem;
     z-index: -10;
@@ -153,7 +163,7 @@ header .user-info {
     left: 0;
     width: 100%;
     height: .11rem;
-    background: linear-gradient(to left, #ff0080, #7928ca);
+    background: linear-gradient(to left, var(--c1), var(--c2));
 }
 
 .nav-profile-dropdown-list .dropdown-list-items:last-child:after {

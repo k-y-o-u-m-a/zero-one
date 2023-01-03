@@ -3,8 +3,12 @@
 :root {
     --primary: #163955;
     --secondary: #8fcbeb;
+    --bg: #000000;
+    --text: #ffffff;
     --black: #000000;
     --white: #ffffff;
+    --red1: #fc4d12;
+    --red2: #fc1235;
 }
 
 * {
@@ -18,19 +22,19 @@ html {
 }
 
 body {
-    color: var(--black);
-    background: var(--white);
+    color: var(--text);
+    background: var(--bg);
     font-family: 'Poppins', sans-serif;
 }
 
 body.dark {
-    --white: #000000;
-    --black: #ffffff;
+    --bg: #000000;
+    --text: #ffffff;
 }
 
 body.light {
-    --black: #000000;
-    --white: #ffffff;
+    --text: #000000;
+    --bg: #ffffff;
 }
 
 a {

@@ -1,0 +1,62 @@
+.input-box {
+    width: 100%;
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.input-box .icon {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+    opacity: .7;
+    background: linear-gradient(to left, var(--c1), var(--c2));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .8;
+}
+
+.input-box:last-child {
+    margin-bottom: 0;
+}
+
+.input-box input {
+    height: 5rem;
+    width: 100%;
+    padding: .5rem 1rem;
+    padding-left: 5rem;
+    border-radius: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--text);
+    background: var(--bg);
+    border: none;
+    letter-spacing: .1rem;
+}
+
+.input-box input+label {
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    color: var(--text);
+    line-height: 5rem;
+    font-size: 1.6rem;
+    pointer-events: none;
+    transition: .3s ease;
+    opacity: .5;
+}
+
+.input-box input+label.elevated,
+.input-box input:focus+label {
+    top: -100%;
+    transform: translateY(20%);
+    color: var(--text);
+    opacity: 1;
+    background: linear-gradient(to left, var(--c1), var(--c2));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

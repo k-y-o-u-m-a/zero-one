@@ -1,9 +1,18 @@
 .nav-tab a {
     padding: 1rem 2rem;
-    background: var(--white);
+    background: var(--bg);
     position: relative;
     font-size: 1.5rem;
     border-radius: 1rem;
+    color: var(--text);
+    display: flex;
+    padding-left: 4rem;
+}
+
+.nav-tab a .icon {
+    z-index: 2;
+    position: absolute;
+    left: 2rem;
 }
 
 .nav-tab.active a::after {
@@ -12,13 +21,15 @@
 
 .nav-tab a::after {
     content: attr(data-text);
-    background: var(--white);
+    background: var(--bg);
     position: absolute;
     display: grid;
     place-items: center;
     width: calc(100% - .4rem);
     height: calc(100% - .3rem);
+    box-sizing: border-box;
     padding: 0;
+    padding-left: 2.5rem;
     top: .15rem;
     left: .16rem;
     font-size: 1.5rem;

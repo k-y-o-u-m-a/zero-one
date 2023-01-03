@@ -7,7 +7,7 @@ import Logo from './Logo';
 import NavTab from './NavTab';
 
 function Header() {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(true);
     const [showLogin, setShowLogin] = useState(false);
     const toggleList = (e) => {
         const dropdown = e.target.nextSibling;
@@ -34,12 +34,12 @@ function Header() {
             </Link>
             <nav>
                 <ul className='nav-list'>
-                    <NavTab name="Home" link="/" />
-                    <NavTab name="About" link="/#about" />
-                    {isLoggedIn ? <NavTab name="Lab" link="/lab" /> : ''}
-                    <NavTab name="Contest" link="/contest" />
-                    <NavTab name="Resource" link="/resource" />
-                    {isLoggedIn ? '' : <NavTab name="Contact Us" link="/#contact-us" />}
+                    <NavTab name="Home" link="/" icon="fa-solid fa-house" />
+                    <NavTab name="About" link="/#about" icon="fa-solid fa-circle-info" />
+                    {isLoggedIn ? <NavTab name="Lab" link="/lab" icon="fa-solid fa-flask" /> : ''}
+                    <NavTab name="Contest" link="/contest" icon="fa-solid fa-user-ninja" />
+                    <NavTab name="Resource" link="/resource" icon="fa-solid fa-book" />
+                    {isLoggedIn ? '' : <NavTab name="Contact Us" link="/#contact-us" icon="fa-solid fa-headset" />}
 
                 </ul>
             </nav>
@@ -51,14 +51,13 @@ function Header() {
                         </div>
                         <div className="divider"></div>
                         <div className="nav-profile-pic">
-                            <span className='nav-username'>p</span>
+                            <span className='nav-username'>R</span>
                             <span className="nav-profile-dropdown">
                                 <i className="fa fa-chevron-down" aria-hidden="true" onClick={(e) => toggleList(e)}></i>
                                 <div className="nav-profile-dropdown-list hidden">
-                                    <div className='dropdown-list-items'>Rahul</div>
-                                    <div className='dropdown-list-items'>Rahul</div>
-                                    <div className='dropdown-list-items'>Rahul</div>
-                                    <div className='dropdown-list-items'>Rahul</div>
+                                    <div className='dropdown-list-items'>Rahul Kumar</div>
+                                    <div className='dropdown-list-items'>Edit Profile</div>
+                                    <div className='dropdown-list-items'>Settings</div>
                                     <div className='dropdown-list-items'>Logout</div>
                                 </div>
                             </span>
@@ -66,11 +65,11 @@ function Header() {
                     </div>
                     :
                     <div className='join' onClick={() => setShowLogin(!showLogin)}>
-                        <Button to="" text="Join" />
+                        <Button to="" text="Join" type="" click="" varrient="" />
                     </div>
             }
             {
-                showLogin ? <LoginSignUp /> : ''
+                showLogin ? <LoginSignUp setShowLogin={setShowLogin} /> : ''
             }
         </header>
     );
