@@ -8,7 +8,7 @@
 }
 
 .main-content .specs-svg svg {
-    margin-top: 1.2rem;
+    margin-top: 3rem;
 }
 
 .sub-content {
@@ -20,13 +20,13 @@
 }
 
 .sub-content .club {
-    font-size: 3rem;
+    font-size: 5rem;
     opacity: .85;
     padding: .5rem;
 }
 
 .sub-content .college-name {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     opacity: .6;
     padding: .5rem;
 }

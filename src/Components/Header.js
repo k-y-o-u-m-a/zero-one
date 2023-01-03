@@ -21,18 +21,18 @@ function Header() {
                         <img src="/Images/logo.png" alt="logo" />
                     </div>
                     <div className="title-name">
-                        <Logo width="72.6px" height="31.2px" fontSize="3rem" />
+                        <Logo width="72.6px" height="31.2px" fontSize="5rem" />
                     </div>
                 </div>
             </Link>
             <nav>
                 <ul className='nav-list'>
                     <NavTab name="Home" link="/" />
-                    <NavTab name="About" link="/about" />
+                    <NavTab name="About" link="/#about" />
                     {isLoggedIn ? <NavTab name="Lab" link="/lab" /> : ''}
                     <NavTab name="Contest" link="/contest" />
                     <NavTab name="Resource" link="/resource" />
-                    {isLoggedIn ? '' : <NavTab name="Contact Us" link="/contact-us" />}
+                    {isLoggedIn ? '' : <NavTab name="Contact Us" link="/#contact-us" />}
 
                 </ul>
             </nav>
@@ -59,7 +59,7 @@ function Header() {
                     </div>
                     :
                     <div className='join' onClick={() => setShowLogin(!showLogin)}>
-                        <Button to="/join" text="Join"></Button>
+                        <Button to="" text="Join" />
                     </div>
             }
             {

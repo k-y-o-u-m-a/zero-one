@@ -8,7 +8,7 @@ function Home() {
         <div className='home-page page'>
             <div className="homepage-logo">
                 <div className="main-content">
-                    <Logo width="242px" height="104px" fontSize="10rem" />
+                    <Logo width="242px" height="104px" fontSize="20rem" />
                 </div>
                 <div className="sub-content">
                     <div className="club">Coding Club</div>

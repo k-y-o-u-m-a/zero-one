@@ -13,7 +13,7 @@ function NavTab(props) {
     return (
         <li className='nav-tab' onMouseOver={(e) => { setColors(e) }}>
             <span className='gradient-box'></span>
-            <Link to={link} >
+            <Link to={link} data-text={name}>
                 {name}
             </Link>
         </li>
