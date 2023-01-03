@@ -7,7 +7,7 @@ import Logo from './Logo';
 import NavTab from './NavTab';
 
 function Header() {
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [showLogin, setShowLogin] = useState(false);
     const toggleList = (e) => {
         const dropdown = e.target.nextSibling;
@@ -57,7 +57,7 @@ function Header() {
                                 <div className="nav-profile-dropdown-list hidden">
                                     <div className='dropdown-list-items'>Rahul Kumar</div>
                                     <div className='dropdown-list-items'>Edit Profile</div>
-                                    <div className='dropdown-list-items'>Settings</div>
+                                    <div className='dropdown-list-items'>Setting</div>
                                     <div className='dropdown-list-items'>Logout</div>
                                 </div>
                             </span>
