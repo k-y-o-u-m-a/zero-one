@@ -6,6 +6,10 @@
     border-radius: 1rem;
 }
 
+.nav-tab.active a::after {
+    background: linear-gradient(to right, var(--c1), var(--c2));
+}
+
 .nav-tab a::after {
     content: attr(data-text);
     background: var(--white);
