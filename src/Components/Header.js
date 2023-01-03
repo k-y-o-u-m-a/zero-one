@@ -59,7 +59,7 @@ function Header() {
                     </div>
                     :
                     <div className='join' onClick={() => setShowLogin(!showLogin)}>
-                        <Button to="/join" text="Join" />
+                        <Button to="" text="Join" />
                     </div>
             }
             {

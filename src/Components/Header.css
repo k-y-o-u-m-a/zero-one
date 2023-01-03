@@ -61,14 +61,6 @@ nav .nav-list {
     justify-content: space-between;
 }
 
-.nav-list .nav-tab:nth-child(2) a::after {
-    left: .18rem;
-}
-
-.nav-list .nav-tab:nth-child(3) a::after {
-    left: .19rem;
-}
-
 header .user-info {
     display: flex;
     align-items: center;
