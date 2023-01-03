@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Button from './Button';
 import './Header.css'
 import LoginSignUp from './LoginSignUp';
@@ -13,6 +13,13 @@ function Header() {
         const dropdown = e.target.nextSibling;
         dropdown.classList.toggle('hidden')
     }
+    const location = useLocation();
+
+    useEffect(() => {
+        setShowLogin(false);
+    }, [location.pathname, location.hash]);
+
+
     return (
         <header>
             <Link to="/">
